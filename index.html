@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince chaubey --portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7387791617.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo (2).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer & Front-end Developer</p>
+                <h1>Hi, I'm <span>Prince Chaubey</span> <br>from Greater Noida.</h1>
+            </div>
+        </div>
+    </div>
+    <!-----about---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpeg" height="400px" width="300px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, my name is Prince Chaubey, and I am a passionate and aspiring web developer
+                        eager to start my career in the tech industry. With a solid foundation in HTML,
+                        CSS, and JavaScript, along with hands-on experience from various projects, I am
+                        committed to building responsive and user-friendly web applications. My enthusiasm
+                        for learning new technologies and solving complex problems drives me to continually
+                        enhance my skills. I am excited to bring my creativity, technical skills, and
+                        dedication to a dynamic team where I can contribute to innovative web development
+                        projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul style="padding-left: 20px;">
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web Interfaces</li>
+                            <li><span>Full stack Developer
+                                </span><br>Web Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul style="padding-left: 20px;">
+                            <li><span>2023 - Current</span><br>Developing full stack to E-commerce Website.</li>
+                            <li><span>2022 - 2023</span><br>Developed some mini projects and training at CISCO</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul style="padding-left: 20px;">
+                            <li><span>2022 - 2025</span><br>Pursuing B.tech from IIMT group of engineering.</li>
+                            <li><span>2018 - 2021</span><br>Deploma from HSBTE</li>
+                            <li><span>2017 - 2018</span><br>10th from AGB senior sec School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------servises---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web- Designing</h2>
+                    <p>Web design is the process of creating the visual look, layout, and functionality of
+                        a website. It involves organizing content in a clear and logical structure, selecting
+                        appropriate color schemes, fonts, and images to create an attractive visual design.
+                        User Interface (UI) design focuses on making interactive elements like buttons and
+                        forms easy to use, </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI (User Interface) design and UX (User Experience) design are crucial aspects of web
+                        and app development. UI design focuses on the visual elements and interactive components
+                        of a website or application, such as buttons, icons, spacing, typography, and color
+                        schemes. Its goal is to create an aesthetically pleasing and cohesive look that enhances
+                        user interaction.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-face-smile"></i>
+                    <h2>full Stack Development</h2>
+                    <p>Full stack development refers to the practice of working on both the front-end and
+                        back-end aspects of a web application. A full stack developer is proficient in
+                        multiple technologies and frameworks necessary to build a complete, functional
+                        application.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="quiz.png" height="280px" width="380px">
+                    <div class="layer">
+                        <h3>SelfQuiz Website</h3>
+                        <p>The main objective of this website is to create a large repository of knowledge for the
+                            general
+                            reference of students and aspirants. Quiz Yourself is created for mini project for college
+                            but
+                            now its providing high quality content to students and aspirants of various examinations in
+                            India. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ecommerce.jpg" height="280px" width="380px">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>Developing an e-commerce website involves creating an online platform where
+                            businesses can sell products or services. It includes designing user-friendly
+                            interfaces, implementing secure payment gateways, managing product catalogs,
+                            and ensuring mobile responsiveness.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="mini.png" height="280px" width="380px">
+                    <div class="layer">
+                        <h3>Mini Projects</h3>
+                        <p>Creating software mini projects involves developing small-scale applications to practice 
+                            coding skills and explore new technologies. These projects help in learning different 
+                            programming languages, frameworks, and development methodologies. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- --------------contact----------- -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>princeraj210180@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 8506939265</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="" class="btn btn2" download>Downlaod CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Made with <i class="fa-solid fa-heart"></i> by Me</p>
+        </div>
+     </div>
+
+
+    <script src="script.js"></script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwoEouoGc-ur1oGLvmqav26dEBBbwFYk1HWvtyXkJKOlMvM1oHbba8Zp0k5ZRdRg_bP/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Messege sent Successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
