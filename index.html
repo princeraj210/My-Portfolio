@@ -148,8 +148,8 @@
                     <img src="mini.png" height="280px" width="380px">
                     <div class="layer">
                         <h3>Mini Projects</h3>
-                        <p>Creating software mini projects involves developing small-scale applications to practice 
-                            coding skills and explore new technologies. These projects help in learning different 
+                        <p>Creating software mini projects involves developing small-scale applications to practice
+                            coding skills and explore new technologies. These projects help in learning different
                             programming languages, frameworks, and development methodologies. </p>
                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
@@ -161,7 +161,7 @@
     </div>
 
     <!-- --------------contact----------- -->
-     <div id="contact">
+    <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -178,7 +178,7 @@
                     <a href="" class="btn btn2" download>Downlaod CV</a>
                 </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
+                    <form name="submit-to-google-sheet" action="https://formspree.io/f/mqazqrvk">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your email" required>
                         <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
@@ -191,16 +191,16 @@
         <div class="copyright">
             <p>Made with <i class="fa-solid fa-heart"></i> by Me</p>
         </div>
-     </div>
+    </div>
 
 
     <script src="script.js"></script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px";
         }
     </script>
@@ -208,20 +208,20 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwoEouoGc-ur1oGLvmqav26dEBBbwFYk1HWvtyXkJKOlMvM1oHbba8Zp0k5ZRdRg_bP/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Messege sent Successfully!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Messege sent Successfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
 </body>
 
 </html>
